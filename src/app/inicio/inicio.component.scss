@@ -1,0 +1,158 @@
+// -------------------------------------------------------
+// -------- Boton de WhatsApp flotante -------------------
+// -------------------------------------------------------
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:120px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+// -------------------------------------------------------
+// --------------- Imagen Principal ----------------------
+// -------------------------------------------------------
+.contPpal{
+    // border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+
+    .imgBack{
+        width: 100%;
+        opacity: .5;
+    }
+}
+.contInicio{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // border: 1px solid blue;
+
+    .titleBarber{
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+
+.button{
+    @extend %button;
+}
+
+%button{
+    background-color: transparent;
+    border-radius: 25px 50px 25px 50px ;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    &:hover{
+        font-weight: bold;
+        background:rgba(0,0,255,0.3);
+    }
+}
+
+// -------------------------------------------------------
+// ------------------- Quienes Somos ---------------------
+// -------------------------------------------------------
+
+.divQuienesSomos{
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+
+    .titleQuienesSomos{
+        @extend %title;
+        color: orange;
+    }
+
+    .divTextoImagen{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2em;
+        padding-right: 2em;
+
+        .textoQuienesSomos{
+            width: 40%;
+            color: white;
+            text-align: justify;
+            font-size: 1em;
+            text-align: center;
+            margin: auto;
+        }
+
+        .imagenQuienesSomos{
+            width: 50%;
+            border-radius: 25px;
+        }
+    }
+}
+
+.material-devider {
+    border-top-color: #FFF;
+    width: 20%;
+    margin: auto;
+    margin-top: .7em;
+}
+
+
+// -------------------------------------------------------
+// ------------------- Testimonios ----------------------
+// -------------------------------------------------------
+.divTestimonio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 2em;
+
+    .titleTestimonio{
+        @extend %title;
+        color: black;
+    }
+    
+    .imageTestimonio{
+        border-radius: 25px;
+    }
+}
+
+%title{
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    // color: orange;
+    margin-bottom: 1em;
+}

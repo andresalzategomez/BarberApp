@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="titleContacto">
+    <p>PQRS</p>
+    <mat-divider class="material-devider"></mat-divider>
+  </div>
+
+  <div class="divContacto">
+    <form class="example-form" (submit)="Enviar()">
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Asunto</mat-label>
+        <input type="text" matInput placeholder="Ej. Comprar Producto" />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Telefono</mat-label>
+        <input type="tel" matInput placeholder="Ej. 311 311 3110" />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput placeholder="Mensaje"></textarea>
+      </mat-form-field>
+
+      <button class="btn btn-warning w-50 m-auto" type="submit">Enviar</button>
+    </form>
+    <div class="mapa">
+        <google-map width="550px" height="350px" [center]="center" [zoom]="zoom">
+        </google-map>
+      </div>
+    
+  </div>
+  
+</div>

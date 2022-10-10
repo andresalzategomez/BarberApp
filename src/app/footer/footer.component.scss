@@ -1,0 +1,12 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .Copyright{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,48 @@
+.container{
+    margin-top: 7em;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+    .titleContacto{
+        @extend %title;
+        color: orange;
+
+        .material-devider {
+            border-top-color: #FFF;
+            width: 30%;
+            margin: auto;
+            margin-top: .7em;
+        }
+    }
+
+    .divContacto{
+        display: flex;
+        justify-content: center;
+
+        .example-form{
+            
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            color: #FFF;
+            width: 35%;
+        }
+
+        
+    }
+.mapa{
+            color: #FFF;
+            height: 100px;
+            background-color: red;
+        }
+    
+}
+
+
+%title{
+    margin-top: 2em;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}

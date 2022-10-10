@@ -1,0 +1,214 @@
+.container {
+  margin-bottom: 3em;
+}
+
+.divAgendar {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-radius: 25px;
+  background-image: url("https://mdbcdn.b-cdn.net/img/new/slides/051.webp" );
+      
+  .titleAgenda {
+    @extend %title;
+    color: orange;
+  }
+
+  .textAgenda{
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+    color: black;
+  }
+}
+
+.imageFondo {
+  position: absolute;
+  width: 50%;
+  margin-left: 10%;
+  opacity: 0.1;
+}
+
+.contTitle {
+  margin-top: 5em;
+  text-align: center;
+
+  .titleCortes {
+    font-size: 4em;
+    @extend %titles;
+    margin-top: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .divTextHorarios {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: -3em;
+    margin-bottom: 3em;
+    text-align: center;
+    color: orange;
+    // border: 1px solid blue;
+
+    .example-card:hover {
+      color: orange;
+    }
+
+    .example-card {
+      background-color: rgba($color: #d7d7e9, $alpha: 0.1);
+      border-radius: 10px;
+    }
+  }
+}
+
+.separador {
+  color: white;
+  margin-top: -1.4em;
+}
+
+.divRowTipos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .divCorteCabello {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+
+    .contPrecios {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      justify-content: space-evenly;
+      // border: 1px dashed white;
+      @extend %titles;
+
+      .titleTipoCorte {
+        @extend %titles;
+        font-size: 3em;
+      }
+      &:hover {
+        scale: 1.02 1.02;
+        background-color: rgba($color: #d7d7e9, $alpha: 0.1);
+      }
+
+      .divPreciosNombres {
+        display: flex;
+        width: 100%;
+
+        // border: 1px solid blue;
+        justify-content: space-between;
+
+        .divTitle {
+          // border: 1px solid red;
+          margin-left: 0.5em;
+          text-align: start;
+          font-size: 1.5em;
+        }
+
+        .divPrecio {
+          // border: 1px solid red;
+          margin-right: 0.5em;
+          text-align: right;
+          font-size: 1.5em;
+          color: orange;
+        }
+      }
+
+      .divDescripcion {
+        text-align: start;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+
+        p {
+          font-family: "Lucida Sans";
+          font-weight: lighter;
+        }
+      }
+
+      .divDuracion {
+        display: flex;
+        justify-content: end;
+        margin-right: 1em;
+        color: orangered;
+      }
+    }
+  }
+}
+
+%titles {
+  color: orange;
+  text-align: center;
+}
+
+.divTextoExplicativo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @extend %titles;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  color: orange;
+}
+
+.contServicios {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .contServiciosIzq,
+  .contServiciosDer {
+    text-align: center;
+  }
+
+  .titleServicio {
+    color: white;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.iconCabello {
+  width: 10em;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+}
+
+mat-expansion-panel {
+  width: 35em;
+  background-color: rgb(13, 13, 52);
+  &:hover {
+    background-color: rgb(87, 87, 238);
+  }
+}
+
+.material-devider {
+  border-top-color: #fff;
+  width: 30%;
+  margin: auto;
+  margin-top: 0.7em;
+}
+
+%title {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}

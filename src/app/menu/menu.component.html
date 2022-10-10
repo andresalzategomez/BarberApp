@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container">
+    <a routerLink="/"
+      ><img class="logo" src="../../assets/images/G Logo.png" alt=""
+    /></a>
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-between"
+      id="navbarCollapse"
+    >
+      <div class="navbar-nav">
+        <a routerLink="nuestroEquipo" class="nav-item nav-link">Nuestro Equipo</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
+          <div class="dropdown-menu">
+            <a routerLink="cortes" class="dropdown-item">Cortes</a>
+            <a routerLink="productos" class="dropdown-item">Productos</a>
+            <a routerLink="academia" class="dropdown-item">Academia</a>
+          </div>
+        </div>
+        <a routerLink="bonos" class="nav-item nav-link">Bonos</a>
+        <a routerLink="contacto" class="nav-item nav-link">Contacto</a>
+      </div>
+      <form class="d-flex">
+        <div class="input-group">
+          <input type="text" class="form-control inputBuscar" #message maxlength="256" placeholder="Buscar" />
+          <button type="button" class="btn btn-secondary">
+            <i class="bi-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>

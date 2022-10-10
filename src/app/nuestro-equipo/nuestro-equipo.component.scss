@@ -1,0 +1,73 @@
+.container{
+    margin-top: 7em;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+    .titleNuestroEquipo{
+        @extend %title;
+        color: orange;
+
+        .material-devider {
+            border-top-color: #FFF;
+            width: 40%;
+            margin: auto;
+            margin-top: .7em;
+        }
+    }
+
+    .divEquipo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .cardIntegrante{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3em;
+            padding-top: 1em;
+
+            .imagenIntegrante{
+                border-radius: 50%;
+                height: 200px;
+                width: 200px;
+            }
+
+            .titleIntegrante{
+                margin-top: 1em;
+                font-size: 2em;
+                color: orange;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .titleCargo{
+                font-size: 1em;
+                color: gray;
+                text-align: center;
+            }
+
+            .textIntegrante{
+                width: 80%;
+                text-align: center;
+                color: white;
+            }
+        }
+        .cardIntegrante:hover{
+            scale: 1.2 1.2;
+            background-color: rgba($color: #d7d7e9, $alpha: .1);
+            border-radius: 25px;
+        }
+    }
+}
+
+
+%title{
+    margin-top: 2em;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
