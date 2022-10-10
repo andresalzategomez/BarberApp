@@ -26,8 +26,7 @@ import {MatSelectModule} from '@angular/material/select';
 
 // Google Maps de Angular 9 
 import {GoogleMapsModule} from '@angular/google-maps';
-import { BonosComponent } from './bonos/bonos.component'; 
-
+import { BonosComponent } from './bonos/bonos.component';
 
 @NgModule({
   declarations: [
