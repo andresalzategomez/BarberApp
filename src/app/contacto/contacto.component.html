@@ -1,33 +1,25 @@
 <div class="container">
   <div class="titleContacto">
-    <p>PQRS</p>
+    <p>Contacto</p>
     <mat-divider class="material-devider"></mat-divider>
   </div>
 
   <div class="divContacto">
-    <form class="example-form" (submit)="Enviar()">
-      <mat-form-field class="example-full-width w-100" appearance="fill">
-        <mat-label>Asunto</mat-label>
-        <input type="text" matInput placeholder="Ej. Comprar Producto" />
-      </mat-form-field>
+    <div class="divInfoContacto">
+      <img class="LogoInfo" src="../../assets/images/G Logo.png" alt="">
+      
+      <p class="titleInfo titleBarber">Barberías </p>
+      <p class="titleInfo">Copacabana: <span class="textInfo">(+57) 310 544 1309</span></p>
+      <p class="titleInfo">Copacabana: <span class="textInfo">(+57) 310 544 1309</span></p>
+      <p class="titleInfo">Copacabana: <span class="textInfo">(+57) 310 544 1309</span></p>
 
-      <mat-form-field class="example-full-width w-100" appearance="fill">
-        <mat-label>Nombre</mat-label>
-        <input matInput />
-      </mat-form-field>
-
-      <mat-form-field class="example-full-width w-100" appearance="fill">
-        <mat-label>Telefono</mat-label>
-        <input type="tel" matInput placeholder="Ej. 311 311 3110" />
-      </mat-form-field>
-
-      <mat-form-field class="example-full-width w-100" appearance="fill">
-        <mat-label>Mensaje</mat-label>
-        <textarea matInput placeholder="Mensaje"></textarea>
-      </mat-form-field>
-
-      <button class="btn btn-warning w-50 m-auto" type="submit">Enviar</button>
-    </form>
+      <br>
+      <p class="titleInfo titleBarber">Academia </p>
+      <p class="titleInfo">Copacabana: <span class="textInfo">(+57) 310 544 1309</span></p>
+      <p class="titleInfo">Copacabana: <span class="textInfo">(+57) 310 544 1309</span></p>
+    </div>
+   
+ 
     <div class="mapa">
         <google-map width="550px" height="350px" [center]="center" [zoom]="zoom">
         </google-map>

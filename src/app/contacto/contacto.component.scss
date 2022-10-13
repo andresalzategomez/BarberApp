@@ -1,48 +1,68 @@
-.container{
-    margin-top: 7em;
-    flex-direction: column;
-    margin-bottom: 5em;
+.container {
+  margin-top: 7em;
+  flex-direction: column;
+  margin-bottom: 5em;
+  min-height: 60vh;
 
-    .titleContacto{
-        @extend %title;
+  .titleContacto {
+    @extend %title;
+    color: orange;
+
+    .material-devider {
+      border-top-color: #fff;
+      width: 30%;
+      margin: auto;
+      margin-top: 0.7em;
+    }
+  }
+
+  .divContacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .divInfoContacto {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      width: 35%;
+
+      .LogoInfo{
+        width: 7em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+      }
+
+      .titleInfo{
+        font-size: 1.2em;
         color: orange;
+      }
 
-        .material-devider {
-            border-top-color: #FFF;
-            width: 30%;
-            margin: auto;
-            margin-top: .7em;
-        }
+      .titleBarber{
+        font-size: 2em;
+        margin-bottom: .5em;
+      }
+
+      .textInfo{
+        margin-left: 1em;
+        color: white;
+      }
     }
-
-    .divContacto{
-        display: flex;
-        justify-content: center;
-
-        .example-form{
-            
-            padding: 2em;
-            display: flex;
-            flex-direction: column;
-            color: #FFF;
-            width: 35%;
-        }
-
-        
+    .mapa {
+      color: #fff;
+      height: 25em;
+      background-color: red;
+      margin: auto;
     }
-.mapa{
-            color: #FFF;
-            height: 100px;
-            background-color: red;
-        }
-    
+  }
 }
 
-
-%title{
-    margin-top: 2em;
-    font-size: 4em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1em;
+%title {
+  margin-top: 2em;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
 }

@@ -2,6 +2,7 @@
     margin-top: 7em;
     flex-direction: column;
     margin-bottom: 5em;
+    min-height: 60vh;
 
     .titleBonos{
         @extend %title;

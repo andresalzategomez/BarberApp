@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="titleContacto">
+    <p>PQRS</p>
+    <mat-divider class="material-devider"></mat-divider>
+  </div>
+
+  <div class="divContacto">
+    <form id="form" #form class="example-form" action="https://formspree.io/f/mnqrzozb" method="POST">
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Asunto</mat-label>
+        <input type="text" name="Subject" matInput placeholder="Ej. Comprar Producto" required/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput name="Nombre" required/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Correo</mat-label>
+        <input type="email" name="email" matInput placeholder="Ej. ejemplo@ejemplo.com" required/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width w-100" appearance="fill">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput name="mensjae" placeholder="Mensaje" required></textarea>
+      </mat-form-field>
+
+      <button class="btn btn-warning w-50 m-auto" name="submit" type="submit">Enviar</button>
+    </form>
+    <div class="mapa">
+        <google-map width="550px" height="350px" [center]="center" [zoom]="zoom">
+        </google-map>
+      </div>
+    
+  </div>
+  
+</div>
+
+<script>
+  const $form = document.querySelector('#form')
+
+  $form.addEventListener('submit', handlesubmit)
+
+  async function handlesubmit(event){
+    event.prevenDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+    method: this.method, 
+    body: form,
+    headers: {
+      'Accept': 'application/json'
+    }
+    })
+
+    if(response.ok){
+      this.reset()
+      alert("Gracias por comunicarte con nosotros")
+    }
+  }
+</script>
